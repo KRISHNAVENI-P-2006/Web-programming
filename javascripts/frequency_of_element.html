@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n=Number(prompt("Enter no: of array elements "));
+            let arr=[];
+            for(let i=0;i<n;i++){
+                arr.push(Number(prompt("Enter element "+i)));
+            }
+            let key=Number(prompt("Enter key element"));
+            let c=0;
+            document.write("Array: ");
+            for(let i=0;i<n;i++){
+                    if(arr[i]==key){c++;}
+                    document.write(arr[i]+" ");
+                }
+            if(!c){
+                document.write("<br>Key not found in array<br>");
+            }else{
+                 document.write("<br>Key found in array "+c+" times<br>Positions: ");
+                for(let i=0;i<n;i++){
+                    if(arr[i]==key){c++;document.write(i+" ");}
+                }
+            }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
