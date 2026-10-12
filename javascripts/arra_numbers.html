@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<script>
+    let n=Number(prompt("Enter no: of array elements: "));
+    let arr=[];let maxi=-999,mini=999,sum=0;
+    for(let i=0;i<n;i++){
+        let val=Number(prompt("Enter array element"));
+        arr.push(val);
+        maxi=Math.max(maxi,val);
+        mini=Math.min(mini,val);
+        sum+=val;
+    }
+    document.write("Array: ");
+    for(let i=0;i<n;i++){
+        document.write(arr[i]+" ");
+    }
+    document.write("<br>Max= "+maxi+"<br>Min= "+mini+"<br>Sum= "+sum);
+</script>
+<body>
+    
+</body>
+</html>
