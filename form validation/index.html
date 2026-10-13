@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation </title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <center>
+        <h2>Student Registration</h2>
+        <form>
+            Student ID:
+            <input type="text" id="id"><br>
+            Name:
+            <input type="text" id="name" placeholder="Enter your full name"><br>
+            Username:
+            <input type="text" id="username" required><br>
+            Password:
+            <input type="password" id="password" required><br>
+            Confirm password:
+            <input type="password" id="cpassword" required> <br>
+            Mobile Number:
+            <input type="text" inputmode="number" id="mob" required><br>
+            Alternate Mobile No:
+            <input type="text" inputmode="number" id="altmob" required><br>
+            Date of Birth:
+            <input type="date" id="dob" required><br>
+            Age:
+            <input type="text" inputmode="number" id="age" required><br>
+            Gender:
+            <input type="text" id="gender" list="glist" required><br>
+            <datalist id="glist">
+                <option value="Male">Male   </option> 
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </datalist><br>
+            Address:
+            <textarea cols="20" rows="10" id="address" required></textarea><br>
+            City:
+            <input type="text" id="city" required><br>
+            State:
+            <input type="text" id="state" required><br>
+            Pin Code:
+            <input type="text" id="pincode" inputmode="numeric" required><br>
+            Country:
+            <input type="text" id="country" required><br>
+            Department:
+            <input type="text" list="dlist" required><br>
+            <datalist id="dlist">
+                <option value="CSE"></option>
+                <option value="ECE"></option>
+                <option value="EEE"></option>
+                <option value="CE"></option>
+                <option value="ME"></option>
+            </datalist><br>
+            Semester:
+            <input type="text" list="slist" required>
+            <datalist id="slist">
+                <option value="Semester 1"></option>
+                <option value="Semester 3"></option>
+                <option value="Semester 5"></option>
+                <option value="Semester 7"></option>
+            </datalist><br>
+            Blood Group:
+            <input type="text" required list="blist">
+            <datalist id="blist">
+                <option value="A+"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B-"></option>
+                <option value="O+"></option>
+                <option value="O-"></option>
+                <option value="AB+"></option>
+                <option value="AB-"></option>
+            </datalist><br>
+            Hobbies:<br>
+            <input type="checkbox" name="hobby" value="Reading">Reading<br>
+            <input type="checkbox" name="hobby" value="Singing">Singing<br>
+            <input type="checkbox" name="hobby" value="Dancing">Dancing<br>
+            <input type="checkbox" name="hobby" value="Swimming">Swimming<br>
+            Skills:<br>
+            <input type="checkbox" name="skills" value="Coding">Coding<br>
+            <input type="checkbox" name="skills" value="Cooking">Cooking<br>
+            <input type="checkbox" name="skills" value="Sports">Sports<br>
+            <input type="checkbox" name="skills" value="Arts">Arts<br>
+            Profile photo
+            <input type="file" id="profile" required><br><br>
+
+            <input type="checkbox" name="tnc" value="Accept Terms and Conditions">Accept Terms and Conditions<br><br>
+            <input type="submit" value="SUBMIT" id="submit">
+        </form>
+        <p id="res"></p>
+    </center>
+</body>
+</html>
