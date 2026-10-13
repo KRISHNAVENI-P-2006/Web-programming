@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Objects</title>
+    <script>
+        let obj1={
+            item:"apple",
+            colour:"red"
+        };
+        let obj2={
+            cost:150,
+            available:true
+        };
+        document.write("Obj1 : "+JSON.stringify(obj1)+"<br>Obj2 : "+JSON.stringify(obj2));
+        Object.keys(obj2).forEach(obj => {
+            obj1[obj]=obj2[obj];
+        });
+        document.write("<br>After merge: "+JSON.stringify(obj1));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
