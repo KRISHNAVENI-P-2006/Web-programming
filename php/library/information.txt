@@ -1,0 +1,8 @@
+The code files in this folder depicts a simple library management system that performs CRUD operations on a library database. The files, as of now, does not contain any styling .The table structure is as follows:
+		Name	  Type	        Collation	            Attributes	Null	
+	1	id      Primary	      int(11)			          No	        None		
+	2	title  	varchar(15)	  utf8mb4_general_ci		No	        None			
+	3	author  varchar(15)  	utf8mb4_general_ci		No	        None			
+	4	genre	  varchar(15)	  utf8mb4_general_ci		No	        None
+
+  The folder is purely for educational purposes. Always use parameterized queries as currently there is a high chance of SQL Injection
